@@ -4,7 +4,7 @@ var state = {
     
 };
 
-state.buttons = ['baboon', 'buffalo', 'cheetah', 'chimpanzee', 'eland', 'elephant', 'giraffe', 'gazelle', 'zebra', 'hippopotamus', 'hyena', 'crocodile', 'leopard', 'lion', 'gorilla', 'rhinoceros'];
+state.buttons = ['baboon',  'cheetah', 'chimpanzee', 'eland', 'elephant', 'giraffe', 'gazelle', 'zebra', 'hippopotamus', 'hyena', 'crocodile', 'leopard', 'lion', 'gorilla', 'rhinoceros'];
 
 function createButton() {
        
@@ -52,7 +52,7 @@ function createOnClick (animal){
     $('.gif').remove();
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    animal + "&api_key=dc6zaTOxFJmzC&limit=20";
+    animal + "&api_key=UzH43GWKAIhgjK0qyZ4SXDlP82hvUprd&limit=20";
         
         $.ajax({
             url: queryURL,
@@ -92,9 +92,11 @@ function createOnClickGif (){
         if (state === "still") {
            $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
+            $(this).attr("class", "animate");
         } else {
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
+            $(this).attr("class", "gif");
             }
     });
 }

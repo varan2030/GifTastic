@@ -25,7 +25,13 @@ body {
     margin: 5px;
     color: white;
     background-color: black;
-    font-family: 'Permanent Marker', cursive;
+    opacity: 0.9;
+    font-family: 'Special Elite', cursive;
+}
+
+.button:hover, .submit:hover, .reset:hover{
+    background-color: white;
+    color: black;
 }
 
 .submit, .reset {
@@ -37,13 +43,20 @@ body {
     width: 30%;
 }
 
-img.gif{
+img.gif {
     width: 190px;
     height: 120px;
     margin: 6px;
     cursor: pointer;
     filter: grayscale(100%);
   }
+
+img.animate {
+    width: 190px;
+    height: 120px;
+    margin: 6px;
+    cursor: pointer;
+}
 
   .slideshow
   {
