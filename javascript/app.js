@@ -38,7 +38,7 @@ function createPerson(){
 
     $(".button").on("click", function() {
     
-     $('.gif').remove();
+     $('.gif, .animate').remove();
         
     var person = $(this).attr("data-person");
 
@@ -49,7 +49,7 @@ function createPerson(){
  
 function createOnClick (animal){
 
-    $('.gif').remove();
+    $('.gif, .animate').remove();
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     animal + "&api_key=UzH43GWKAIhgjK0qyZ4SXDlP82hvUprd&limit=20";
